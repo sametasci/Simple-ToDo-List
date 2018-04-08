@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css">        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="css/syle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row input-field">
+                <header class="col xl12">
+                    <!-- Add task -->
+                    <input placeholder="Enter a task.." id="task" type="text" class="validate">
+                    <button id="add-task">
+                       <i class="fas fa-plus"></i>
+                    </button>
+                </header>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col xl12 task-content">
+                    <div class="card card-todo">
+                        <div class="card-content white-text">
+                            <span class="card-title todo-title">To do List</span>
+                            <!-- To do task -->
+                            <ul class="todo-task" id="todo-task">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl12 completed-content">
+                    <div class="card card-completed">
+                        <div class="card-content white-text">
+                            <span class="card-title completed-title">Completed List</span>
+                            <!-- Completed task -->
+                            <ul class="completed-task" id="completed-task">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/materialize.js"></script>        
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
