@@ -9,7 +9,6 @@ const deleteIcon = '<i class="far fa-trash-alt"></i>';
 returnList();
 
 document.getElementById('add-task').addEventListener('click', function(){
-    console.log("ares");
     var value = document.getElementById('task').value;
     if (value){
         addTask(value);
@@ -19,7 +18,6 @@ document.getElementById('add-task').addEventListener('click', function(){
 function addTask(value){
     addTaskdataList(value);
     document.getElementById('task').value = '';
-
     dataList.todoTask.push(value);
     dataListStorage();
 }
